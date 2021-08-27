@@ -2,7 +2,7 @@ import pandas as pd
 import env
 import os
 # must have env.py saved in same directory as script. ensure the env.py is in your .gitignore
-def get_connection(db_name, username = env.username, host=env.host, password=env.password):
+def get_connection(db_name, username = env.user, host=env.host, password=env.password):
     '''
     This function makes a connection with and pulls from the CodeUp database. It 
     takes the database name as its argument, pulls other login info from env.py.
@@ -11,7 +11,7 @@ def get_connection(db_name, username = env.username, host=env.host, password=env
     '''
     return f'mysql+pymysql://{username}:{password}@{host}/{db_name}'
     
-def get_telco_db(db_name, username = env.username, password = env.password, host = env.host):
+def get_telco_db(db_name, username = env.user, password = env.password, host = env.host):
     filename = 'telco.csv'
     if os.path.isfile(filename):
         telco_df = pd.read_csv(filename, index_col=0)
