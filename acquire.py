@@ -11,7 +11,7 @@ def get_connection(db_name, username = env.user, host=env.host, password=env.pas
     '''
     return f'mysql+pymysql://{username}:{password}@{host}/{db_name}'
     
-def get_telco_db(db_name, username = env.user, password = env.password, host = env.host):
+def get_telco_data():
     filename = 'telco.csv'
     if os.path.isfile(filename):
         telco_df = pd.read_csv(filename, index_col=0)
