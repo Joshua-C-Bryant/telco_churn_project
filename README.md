@@ -1,5 +1,7 @@
 # Telco Churn Classification Project
 
+## Presentation Link: https://www.canva.com/design/DAEl5emTKHk/9gphAP2pKz1uE50jwFFTfw/edit?utm_content=DAEl5emTKHk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## Project Goals:
 - Document code, process (data acquistion, preparation, exploratory data analysis and statistical testing, modeling, and model evaluation), findings, and key takeaways in a Jupyter Notebook report.
 - Create modules (acquire.py, prepare.py) that make your process repeateable.
